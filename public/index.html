@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tic-tac-toe</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="w-screen h-screen bg-black flex flex-col justify-around items-center"
+    >
+      <header class="flex justify-center">
+        <h2 class="neon-text text-3xl">Tic Tac Toe PvP</h2>
+      </header>
+      <div
+        class="board flex flex-row flex-wrap text-6xl justify-around lg:w-4/12 w-full neon-text"
+      >
+        <div class="grid-square">O</div>
+        <div class="grid-square">X</div>
+      </div>
+      <div class="flex flex-col justify-around items-center">
+        <input type="text" placeholder="Game id" required="true" />
+        <input type="text" placeholder="player name" required="true" />
+        <a href="" class="neon-text btn">Create Game</a>
+        <a href="" class="neon-text btn">Join Game</a>
+      </div>
+    </div>
+  </body>
+</html>
